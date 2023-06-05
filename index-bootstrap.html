@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bootstrap Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url('{{data.background.photo}}');">
+  <style>
+    .middle-section {
+      background-color: rgb(248, 237, 206);
+      width: auto;
+    }
+  
+  </style>
+
+    <section>
+      <div class="container text-center">
+      <div class="row">
+        <div><h1>{{data.user.fullName}}</h1></div>
+        <hr>
+        <div class="col-xs col-sm col-md col-lg">"Her smile shames the Sun" -Anonymous</div>
+        <div class="col-xs col-sm col-md col-lg"><img src="{{data.user.photo}}" class="rounded-circle"></div>
+      </div>
+      </div>
+    </section>
+<br>
+
+    <section class="middle-section">
+    <div class="container">
+      <div class="text-center"><h2>Which City?</h2></div>
+      <hr>
+      <div class="text-center"><h3>{{data.city.name}}</h3></div>
+      <div class="row">
+      <div class="col-xs col-sm col-md col-lg"><img src="{{data.city.photo}}"></div>
+      <div class="col-xs col-sm col-md col-lg">{{data.city.description}}</div>
+    </div>
+    </div>
+    </section>
+<br>
+
+    <section class="middle-section">
+      <div class="container ">
+
+        <div class="text-center"><h2>Foreign Language</h2></div>
+        <hr>
+        <div class="text-center"><h3>{{data.foreignLanguage.language}}</h3></div>
+        
+        <div>{{data.foreignLanguage.description}}</div>
+        
+            <div>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>English Phrase</th>
+                            <th>Turkish Phrase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{#each data.foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                    </tr>
+                    {{/each}}
+                    <table>
+                    </tbody>
+            </div>  
+      </div>
+
+    </section>
+
+<br>
+
+    <section class="middle-section">
+
+      <div class="container">
+        <div class="text-center"><h2>Favorite Subjects</h2></div>
+        <hr>
+        <div class="text-center"><h3>What you studied and where?</h3></div>
+        <hr>
+        <div class="text-center">{{data.favouriteSubjects.description}}</div>
+        <br>
+        <div class="text-center"><h3>Your favorite subjects?</h3></div>
+        <hr>
+      </div>
+      <div class="row">
+        {{#each data.favouriteSubjects.subjects}}
+      <div class="subject col-xs col-sm col-md col-lg">
+        <h5>{{name}}</h5>
+        <img src="{{photo}}">
+        <p><span class="align-text-botton">{{description}}</span></p>
+      </div>
+    {{/each}}
+    
+    </section>
+<hr>    
+<br>
+
+    <section class="text-center">
+      
+        <a href="./index-materialize.html"><button type="button" class="btn btn-dark">materialize</button></a>
+        <a href="./index.html"><button type="button" class="btn btn-dark">home</button></a>
+      
+    </section>
+
+      <script type="module" src="vite.config.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+    </div>  
+    </div>
+
+  </body>
+</html>

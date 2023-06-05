@@ -1,0 +1,56 @@
+{
+    "user" : {
+        "fullName": "Mandisa Zina",
+        "photo" : "images/mandisa.jpg" 
+    },
+    "background" : {
+        "photo" : "images/TM-Cpt.jpeg" 
+    },
+    "city" : {
+        "name" : "Istanbul, Turkey",
+        "photo" : "images/favouriteCity2.jpeg",
+        "description" : "A city I would like to visit is Istanbul, Turkey. I love Istanbul for its beauty and its rich history, Istanbul has artifacts and buildings that date as far back as 667 BC. These include the 6th century Higia Sophia which was originally a church turned mosque, and was the largest cathedral in the world for nearly a thousand years, as well as the Topkapi Palace which served as a royal residence for the Ottoman Sultans from 1478 - 1853 and is now a museum since 1924."
+    },
+    "foreignLanguage" : {
+        "language" : "Turkish",
+        "description" : "Of course, a foreign language I would love to learn is Turkish, so that I can be able to hold a basic conversation and exchange pleasantries with the locals from Instanbul when I visit the city one day. Here are a few Turkish phrases I havelearned translated to English:",
+        "phrases" : [{
+            "englishPhrase" : "Hello, how are you?",
+            "foreignLanguage" : "Merhaba, nasilsin?"
+        },
+        {
+            "englishPhrase" : "Pleased to meet you.",
+            "foreignLanguage" : "Tanıştığıma memnun oldum."
+        },
+        {
+            "englishPhrase" : "Have a nice day.",
+            "foreignLanguage" : "İyi günler."
+        },
+        {
+            "englishPhrase" : "Thank you.",
+            "foreignLanguage" : "Teşekkür ederim."
+        },
+        {
+            "englishPhrase" : "Goodbye.",
+            "foreignLanguage" : "Elveda."
+        }]
+    },
+    "favouriteSubjects" : {
+        "description" : "I studied Public Management and Governance at the University of Johannesburg.",
+        "subjects" : [{
+            "name" : "Public Management and Governance",
+            "photo" : "images/pmg.jpeg",
+            "description" : "Public management and governance involves the efficient administration and oversight of public resources and institutions, promoting transparency, accountability, and citizen participation. They aim to optimize the use of resources, improve service delivery, and foster trust in public institutions. Ultimately, they contribute to the effective functioning of the public sector and the achievement of public policy goals."
+        },
+        {
+            "name" : "Human Resource Management",
+            "photo" :"images/hrm.jpeg",
+            "description" : "Human resource management (HRM) is the strategic approach to managing an organization's workforce, encompassing activities such as recruitment, training, performance evaluation, and employee relations. It involves ensuring that the right people with the right skills are hired and developed to contribute to the organization's goals. HRM focuses on maximizing employee engagement, productivity, and satisfaction while maintaining compliance with labor laws and promoting a positive work culture."
+        },
+        {
+            "name" : "English",
+            "photo" : "images/eng.jpeg",
+            "description" : "English C and D modules are academic writing modules that typically focus on equipping students with the necessary skills and knowledge to produce high-quality academic papers and essays. The module covers essential aspects of academic writing, including thesis development, critical analysis, research techniques, proper citation and referencing, and structuring coherent and cohesive arguments. Through practical exercises and guidance, students learn how to effectively communicate their ideas, support their arguments with evidence, and adhere to academic conventions and standards."
+        }
+    ]}
+}
