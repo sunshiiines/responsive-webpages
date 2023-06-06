@@ -14,9 +14,9 @@ import data from './data.json';
           },
       },
       plugins: [handlebars({
-        context : {
-          data
-        }
-    })]
-      
-  });
+      context : {
+        data
+      }
+  })]
+    
+});
